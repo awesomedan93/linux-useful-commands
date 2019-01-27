@@ -1,3 +1,6 @@
 # linux-useful-commands
-# display containers not wide terminal
+## docker
+display docker containers not wide terminal
+```bash
 docker ps | less -S
+```
