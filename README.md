@@ -8,3 +8,10 @@ linux alias
 ```bash
 alias l="ls -al"
 ```
+# git useful commands
+create a branch from a specific commit
+```bash
+git checkout commit_id
+git checkout -b new_branch_name
+git push -u origin new_branch_name
+```
