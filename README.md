@@ -15,3 +15,7 @@ git checkout commit_id
 git checkout -b new_branch_name
 git push -u origin new_branch_name
 ```
+# general commands
+```bash
+sudo scp -r -i  ~/.ssh/key.pem ~/source/path  user@host_address:/var/www/destination/path
+```
