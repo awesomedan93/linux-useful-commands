@@ -15,6 +15,10 @@ git checkout commit_id
 git checkout -b new_branch_name
 git push -u origin new_branch_name
 ```
+pull from a another branch - only specific commit
+```bash
+git cherry-pick <commit-hash>
+```
 # general commands
 copy files from server A to B
 ```bash
