@@ -28,3 +28,7 @@ copy files from server B (remote) to A
 ```bash
 scp -r user@host_address:/var/www/source /home/user/Desktop/
 ```
+querying DNS
+```bash
+dig example.com
+```
