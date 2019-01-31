@@ -20,7 +20,11 @@ pull from a another branch - only specific commit
 git cherry-pick <commit-hash>
 ```
 # general commands
-copy files from server A to B
+copy files from server A to B (remote)
 ```bash
-sudo scp -r -i  ~/.ssh/key.pem ~/source/path  user@host_address:/var/www/destination/path
+scp -r -i  ~/.ssh/key.pem /home/user/Desktop/source/  user@host_address:/var/www/destination/path
+```
+copy files from server B (remote) to A
+```bash
+scp -r user@host_address:/var/www/source /home/user/Desktop/
 ```
