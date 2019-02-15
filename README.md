@@ -1,8 +1,12 @@
 # linux-useful-commands
-## docker
+# docker
 display docker containers not wide terminal
 ```bash
 docker ps | less -S
+```
+get ip of all running containers
+```
+docker inspect -f '{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)
 ```
 linux alias
 ```bash
