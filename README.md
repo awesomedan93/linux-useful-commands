@@ -1,4 +1,5 @@
 # linux-useful-commands
+
 # docker
 display docker containers not wide terminal
 ```bash
@@ -8,10 +9,7 @@ get ip of all running containers
 ```
 docker inspect -f '{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)
 ```
-linux alias
-```bash
-alias l="ls -al"
-```
+
 # git useful commands
 create a branch from a specific commit
 ```bash
@@ -23,6 +21,7 @@ pull from a another branch - only specific commit
 ```bash
 git cherry-pick <commit-hash>
 ```
+
 # general commands
 copy files from server A to B (remote)
 ```bash
@@ -35,4 +34,8 @@ scp -r user@host_address:/var/www/source /home/user/Desktop/
 querying DNS
 ```bash
 dig example.com
+```
+linux alias
+```bash
+alias l="ls -al"
 ```
