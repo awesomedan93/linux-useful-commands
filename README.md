@@ -31,6 +31,12 @@ copy files from server B (remote) to A
 ```bash
 scp -r user@host_address:/var/www/source /home/user/Desktop/
 ```
+copy files from server A to B (remote) using rsync and pem key for ssh
+```
+rsync -avh -e "ssh -i ~/.ssh/example.pem" /home/user/Desctop/source root@192.168.0.100::/var/www/destination/path
+```
+
+
 querying DNS
 ```bash
 dig example.com
